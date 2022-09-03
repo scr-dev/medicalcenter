@@ -1,0 +1,332 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /* background-color: cornflowerblue; */
+}
+header{
+    display: flex;
+    justify-content: center;
+    height: 120px;
+}
+
+.container {
+    display: flex;   
+    justify-content: space-between;
+    width: 990px;         
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav ul, nav li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #727272;
+}
+
+nav .active a,
+nav a:hover {
+    background-color: #39aae1;
+    color: #FFFFFFFF;
+}
+
+/* Aréa do banner */
+
+#banner {
+    display: flex;
+    justify-content: center;
+    background-image: url('../images/img1.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 670px;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.banner_headline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+.banner_headline h1 {
+    color: #FFFFFF;
+    font-size: 70px;
+    text-shadow: 0px 1px 0px #555555;
+    margin: 0;
+    padding: 0;
+    max-width: 350px;
+}
+.banner_headline h2 {
+    color: #FFFFFF;
+    font-size: 20px;
+    text-shadow: 0px 1px 0px #555555;
+    margin: 0;
+    padding: 0;
+    max-width: 350px;
+    margin-top: 30px;
+}
+
+.banner_options {
+    height: 210px;
+    display: flex;
+
+}
+.banner1,
+.banner2,
+.banner3 {
+    flex: 1;
+    color: #FFFFFF;
+    padding: 20px;
+}
+.banner1 {
+    background-color: #39aae1;
+}
+.banner2 {
+    background-color: #0079c7;
+}
+.banner3 {
+    background-color: #2b4c99;
+}
+
+.banner_title {
+    font-size: 21px;
+}
+
+.banner_desc {
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.banner_options a {
+    display: inline-block;
+    border: 1px solid white;
+    padding: 5px;
+    color: #FFFFFF;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.table_time {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;    
+    border-bottom: 1px solid rgba(220, 220, 220, 0.438);
+}
+.table_time span{
+    padding-bottom: 5px;
+}
+
+/* CONTEUDO PRINCIPAL */
+
+#geral {
+    display: flex;
+    justify-content: center;
+   
+}
+#geral section {
+    flex: 2;
+  
+}
+
+
+#geral aside {
+    flex: 1;
+   
+}
+
+.widget_title{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.widget_title_text{
+    color: #000000;
+    font-size: 20px;
+    font-weight: bold;
+}
+.widget_title_bar{
+    width: 50px;
+    height: 2px;
+    background-color: #39aae1;
+    margin-top: 10px;
+}
+
+/* SECTION */
+.flex {
+    display: flex;   
+    flex-wrap: wrap;
+}
+article {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 30px;
+}
+
+article .news_data {
+    display: flex;
+}
+article a {
+    text-decoration: none;
+    width: 50%;
+}
+article .news_posted_at {
+    background-color: #2b4c99;
+    color: #FFFFFF;
+    font-size: 12px;
+    padding: 10px;
+    margin-right: 2px;
+}
+article .news_coments {
+    background-color: #0079c7;
+    color: #FFFFFF;
+    font-size: 12px;
+    padding: 10px;
+}
+
+article .thumb_news {
+    margin-top: 30px;
+}
+
+article .thumb_news img {
+    width: 100%;
+    height: auto;
+}
+
+article .news_title {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 23px;
+    color: black;
+}
+
+article .news_resume {
+    font-size: 14px;
+    line-height: 20px;
+    padding-bottom: 30px;
+    color: #5c5c5c;
+    text-align: justify;
+}
+
+/* ASIDE */
+
+.widget_body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.department {
+    background-color: #39aae1;
+    width: 150px;
+    height: 150px;   
+    margin-bottom: 27px;
+    margin-top: 2px;
+}
+
+/* Aside make a apppontment */
+
+.contact_us {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+}
+.description_agenda {
+    padding-top: 10px;
+    margin-bottom: 30px;
+}
+.contact {
+    border-top: 1px solid #72727279;
+}
+.card_contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #72727279;
+}
+
+.contact_us i {
+    font-size: 30px;
+    color: #2b4c99;
+    margin-right: 6px;
+}
+
+.contact_us a {
+    display: block;
+    text-decoration: none;
+    color: #727272;
+}
+
+.contact_us a:hover {
+    color: #39aae1;
+   
+}
+.phone {
+    font-weight: bold;    
+}
+.underline{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .widget_body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.departament {
+    width: 120px;
+    height: 120px;
+    margin: 20px;
+    padding: 10ps;
+    background-color: #39aae1;
+} */
