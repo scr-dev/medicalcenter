@@ -300,33 +300,137 @@ article .news_resume {
     text-decoration: underline;
 }
 
+/* FOOTER */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .widget_body {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+.flexColumn{
+    flex-direction: column;
 }
 
-.departament {
-    width: 120px;
-    height: 120px;
-    margin: 20px;
-    padding: 10ps;
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #1e1e1e;
+}   
+
+.footer_menu {
+    display: flex;
+    flex: 1;
+    color: white;
+}
+.footer_menu a {
+    display: block;
+    padding: 10px; 
+    text-decoration: none;
+    color: #FFFFFFFF;
+}
+.link_footer {
+    display: flex;
+    flex-direction: column;   
+    justify-content: center;
+    margin-top: 10px;    
+    margin-left: 20px;    
+}
+.footer_link_iconic {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 12px;
+}
+.footer_link_iconic i {
+    font-size: 12px;
+    margin-left: 8px;
+    color: #FFFFFF;
+}
+
+.fm_1, .fm_2, .fm_3 {
+    flex: 1;   
+    /* margin-left: 10px; */
+}
+.fm_1 {
     background-color: #39aae1;
-} */
+}
+.fm_2 {
+    background-color: #0079c7;
+}
+.fm_3 {
+    background-color: #2b4c99;
+}
+
+.footer_info {
+    display: flex;
+    color: #FFFFFFFF;   
+}
+
+.footer_areaitem {
+    flex: 1;
+}
+footer .widget_title_text {
+    color: #FFFFFFFF;
+}
+
+.footer_copy {
+    border-top: 1px solid #2c2c2c;
+    height: 40px;
+    line-height: 40px;
+    color: #5c5c5c;
+    font-size: 12px;
+    margin-top: 30px;
+}
+.link_footer_title {
+    font-size: 20px;
+}
+
+.footer_informations {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;  
+    color: #c0c0c0;  
+}
+.adress_title {
+    margin-top: 15px;
+}
+
+.footer_section_adress {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+.footer_section_icon_social {
+    display: flex;
+    margin-top: 30px;
+    
+}
+.footer_section_icon_social a {
+    display: block;
+    margin-right: 10px;
+    color: rgb(117, 112, 112);
+    font-size: 22px;
+}
+.footer_section_icon_social a:hover {
+    color: #39aae1;
+}
+
+.footer_last_post {
+    font-size: 12px;
+}
+.last_postagem{
+    display: flex;
+    margin-top: 30px;
+}
+.last_postagem p {
+    margin-left: 8px;
+    margin-right: 20px;
+    margin-top: 0;
+}
+.last_postagem p a {
+    text-decoration: none;
+    display: block;
+    margin-top: 5px;
+    color: #39aae1;
+}
+
+.about_text p {
+    color: #c0c0c0;  ;
+}
